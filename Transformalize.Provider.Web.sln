@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transformalize.Provider.Web", "src\Transformalize.Provider.Web\Transformalize.Provider.Web.csproj", "{23360184-410F-49A2-AB89-ABCEBC8C94DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transformalize.Transform.Web", "src\Transformalize.Transform.Web\Transformalize.Transform.Web.csproj", "{DB051DAF-5619-48E8-8DD8-C9F159FEF398}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{58F153C8-5AB6-475C-ACB1-A5B151BD6FA7}"
+	ProjectSection(SolutionItems) = preProject
+		nuget\nuget.bat = nuget\nuget.bat
+		nuget\Transformalize.Provider.Web.Autofac.nuspec = nuget\Transformalize.Provider.Web.Autofac.nuspec
+		nuget\Transformalize.Provider.Web.nuspec = nuget\Transformalize.Provider.Web.nuspec
+		nuget\Transformalize.Transform.Web.Autofac.nuspec = nuget\Transformalize.Transform.Web.Autofac.nuspec
+		nuget\Transformalize.Transform.Web.nuspec = nuget\Transformalize.Transform.Web.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A246818-3ED9-4FFE-A9F4-06C01B9F7F44}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transformalize.Transform.Web.Autofac", "src\Transformalize.Transform.Web.Autofac\Transformalize.Transform.Web.Autofac.csproj", "{27A2561C-217A-4BD4-A65F-C5CF19ADC237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transformalize.Provider.Web.Autofac", "src\Transformalize.Provider.Web.Autofac\Transformalize.Provider.Web.Autofac.csproj", "{6A6D1340-6B8D-42C6-9BE0-D450B916F057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Integration", "src\Test.Integration\Test.Integration.csproj", "{AC555A47-03B1-4FE5-9E45-7A3C2F9A9C7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23360184-410F-49A2-AB89-ABCEBC8C94DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23360184-410F-49A2-AB89-ABCEBC8C94DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23360184-410F-49A2-AB89-ABCEBC8C94DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23360184-410F-49A2-AB89-ABCEBC8C94DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB051DAF-5619-48E8-8DD8-C9F159FEF398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB051DAF-5619-48E8-8DD8-C9F159FEF398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB051DAF-5619-48E8-8DD8-C9F159FEF398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB051DAF-5619-48E8-8DD8-C9F159FEF398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A2561C-217A-4BD4-A65F-C5CF19ADC237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A2561C-217A-4BD4-A65F-C5CF19ADC237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A2561C-217A-4BD4-A65F-C5CF19ADC237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A2561C-217A-4BD4-A65F-C5CF19ADC237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6D1340-6B8D-42C6-9BE0-D450B916F057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6D1340-6B8D-42C6-9BE0-D450B916F057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6D1340-6B8D-42C6-9BE0-D450B916F057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6D1340-6B8D-42C6-9BE0-D450B916F057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC555A47-03B1-4FE5-9E45-7A3C2F9A9C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC555A47-03B1-4FE5-9E45-7A3C2F9A9C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC555A47-03B1-4FE5-9E45-7A3C2F9A9C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC555A47-03B1-4FE5-9E45-7A3C2F9A9C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58F153C8-5AB6-475C-ACB1-A5B151BD6FA7} = {7A246818-3ED9-4FFE-A9F4-06C01B9F7F44}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C7DE23D-11E2-4C54-81B4-BBEFE02F468D}
+	EndGlobalSection
+EndGlobal
