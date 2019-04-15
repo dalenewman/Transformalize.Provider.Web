@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Transformalize.Provider.Web</id>
-    <version>0.5.0-beta</version>
+    <version>0.5.1-beta</version>
     <title>Transformalize Provider Web</title>
     <authors>Dale Newman</authors>
     <owners>Dale Newman</owners>

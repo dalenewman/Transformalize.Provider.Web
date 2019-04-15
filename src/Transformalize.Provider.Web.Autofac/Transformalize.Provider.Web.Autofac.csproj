@@ -7,7 +7,7 @@
     <ProjectGuid>{6A6D1340-6B8D-42C6-9BE0-D450B916F057}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Transformalize.Provider.Web.Autofac</RootNamespace>
+    <RootNamespace>Transformalize.Providers.Web.Autofac</RootNamespace>
     <AssemblyName>Transformalize.Provider.Web.Autofac</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
