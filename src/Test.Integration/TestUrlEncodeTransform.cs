@@ -11,7 +11,7 @@ using Transformalize.Transforms.Web.Autofac;
 
 namespace Test.Integration {
    [TestClass]
-   public class UnitTest1 {
+   public class TestUrlEncodeTransform {
       [TestMethod]
       public void TestUrlEncode() {
          const string xml = @"<add name='Test'>
