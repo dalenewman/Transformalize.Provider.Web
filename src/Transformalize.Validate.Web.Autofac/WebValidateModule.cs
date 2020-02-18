@@ -18,6 +18,7 @@ namespace Transformalize.Validate.Web.Autofac {
          _shortHand = builder.Properties.ContainsKey("ShortHand") ? (ShorthandRoot)builder.Properties["ShortHand"] : new ShorthandRoot();
 
          RegisterValidator(builder, (ctx, c) => new EmailValidator(c), new EmailValidator().GetSignatures());
+         RegisterValidator(builder, (ctx, c) => new UrlValidator(c), new UrlValidator().GetSignatures());
       }
 
       private void RegisterValidator(ContainerBuilder builder, Func<IComponentContext, IContext, IValidate> getValidator, IEnumerable<OperationSignature> signatures) {

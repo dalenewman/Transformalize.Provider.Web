@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Autofac;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Transformalize.Configuration;
@@ -10,18 +9,18 @@ using Transformalize.Validate.Web.Autofac;
 
 namespace Test.Integration {
    [TestClass]
-   public class TestValidateEmail {
+   public class TestValidateUrl {
       [TestMethod]
       public void TestValidate() {
          const string xml = @"<add name='Test'>
   <entities>
     <add name='Test'>
       <rows>
-         <add Email='dalenewman@gmail.com' />
-         <add Email='durl@!!!!@.com' />
+         <add url='https://www.google.com' />
+         <add url='javascript:window.location=https://www.google.com'/>
       </rows>
       <fields>
-        <add name='Email' type='string' v='email()' />
+        <add name='url' type='string' v='url()' />
       </fields>
     </add>
   </entities>
@@ -37,9 +36,9 @@ namespace Test.Integration {
 
                var rows = process.Entities.First().Rows;
                Assert.AreEqual(2, rows.Count);
-               Assert.AreEqual(true, rows[0]["EmailValid"]);
-               Assert.AreEqual(false, rows[1]["EmailValid"]);
-               Assert.AreEqual("Email must be an email.|", rows[1]["EmailMessage"]);
+               Assert.AreEqual(true, rows[0]["urlValid"]);
+               Assert.AreEqual(false, rows[1]["urlValid"]);
+               Assert.AreEqual("url must be an url.|", rows[1]["urlMessage"]);
 
             }
          }

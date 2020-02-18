@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{58F153C8
 		nuget\Transformalize.Provider.Web.nuspec = nuget\Transformalize.Provider.Web.nuspec
 		nuget\Transformalize.Transform.Web.Autofac.nuspec = nuget\Transformalize.Transform.Web.Autofac.nuspec
 		nuget\Transformalize.Transform.Web.nuspec = nuget\Transformalize.Transform.Web.nuspec
+		nuget\Transformalize.Validate.Web.Autofac.nuspec = nuget\Transformalize.Validate.Web.Autofac.nuspec
+		nuget\Transformalize.Validate.Web.nuspec = nuget\Transformalize.Validate.Web.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A246818-3ED9-4FFE-A9F4-06C01B9F7F44}"
