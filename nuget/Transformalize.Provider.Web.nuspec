@@ -2,20 +2,21 @@
 <package>
   <metadata>
     <id>Transformalize.Provider.Web</id>
-    <version>0.6.27-beta</version>
+    <version>0.8.22-beta</version>
     <title>Transformalize Provider Web</title>
     <authors>Dale Newman</authors>
     <owners>Dale Newman</owners>
-    <licenseUrl>https://github.com/dalenewman/Transformalize/blob/master/LICENSE.md</licenseUrl>
+    <license type="expression">Apache-2.0</license>
     <projectUrl>https://github.com/dalenewman/Transformalize</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>web provider for transformalize</description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+    </releaseNotes>
     <copyright>Copyright 2017-2020</copyright>
     <tags>etl</tags>
     <dependencies>
       <group targetFramework="net462">
-        <dependency id="Transformalize" version="0.6.27-beta" />
+        <dependency id="Transformalize" version="0.8.22-beta" />
       </group>
     </dependencies>
   </metadata>

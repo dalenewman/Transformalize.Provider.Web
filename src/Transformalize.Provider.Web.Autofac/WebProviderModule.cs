@@ -46,7 +46,7 @@ namespace Transformalize.Providers.Web.Autofac {
          }
 
          // entity input
-         foreach (var entity in process.Entities.Where(e => process.Connections.First(c => c.Name == e.Connection).Provider == Provider)) {
+         foreach (var entity in process.Entities.Where(e => process.Connections.First(c => c.Name == e.Input).Provider == Provider)) {
 
             // input version detector
             builder.RegisterType<NullInputProvider>().Named<IInputProvider>(entity.Key);
@@ -70,7 +70,7 @@ namespace Transformalize.Providers.Web.Autofac {
          }
 
          // TODO: be able to post (write) to web
-         if (process.Output().Provider == "web") {
+         if (process.GetOutputConnection().Provider == "web") {
 
             // PROCESS OUTPUT CONTROLLER
             builder.Register<IOutputController>(ctx => new NullOutputController()).As<IOutputController>();

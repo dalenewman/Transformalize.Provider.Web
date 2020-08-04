@@ -36,7 +36,7 @@ namespace Transformalize.Validate.Web {
          try {
             var addr = new System.Net.Mail.MailAddress(value);
             valid = addr.Address == value;
-         } catch (FormatException ex) {
+         } catch (FormatException) {
          } finally {
             if (IsInvalid(row, valid)) {
                AppendMessage(row, _betterFormat.Format(row));
